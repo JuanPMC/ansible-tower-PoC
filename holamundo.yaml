@@ -2,7 +2,7 @@
   hosts: {{ targuet }}
   tasks:
    - name: Ping my hosts
-     ansible.builtin.ping:
+     ansible.builtin.shell: "ls"
    - name: Print message
      ansible.builtin.debug:
        msg: Hello world
