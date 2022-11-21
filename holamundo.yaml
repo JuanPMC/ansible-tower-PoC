@@ -1,5 +1,5 @@
 - name: hello
-  hosts: "{{ targuet }}"
+  hosts: all # "{{ targuet }}"
   tasks:
    - name: Ping my hosts
      ansible.builtin.shell: "ls"
